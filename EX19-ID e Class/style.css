@@ -1,0 +1,33 @@
+body {
+    background-color: lightgreen;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: green;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+h1#principal {
+    background-color: rgb(5, 51, 5);
+    color: whitesmoke;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ .basico {
+    color: red;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ }
+ .intermediario {
+    color: darkgoldenrod;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ }
+ .avancado {
+    color: blue;
+ }
+h2 {
+    color: darkgreen;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}

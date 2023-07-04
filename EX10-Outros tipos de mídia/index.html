@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de mídias</title>
+</head>
+<body>
+    <h1>Mídias</h1>
+    <h2>Imagens dinâmicas</h2>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmentenaumente e diminua o tamanho do seu navegador.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="img/imgpq.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="img/imgmd.png" type="image/png">
+        <img src="img/imggr.png" alt="Imagem flexível">
+    </picture>
+    <h2>Reproduzindo Áudio</h2>
+    <p>Vamos aprender a reproduzir o áudio:</p>
+    <audio preload="metadata" autoplay controls loop> <!--Este loop faria com que a música,ao chegar no final,repita novamente.-->
+        <source src="audio/Um Sinal _ Xande (Sinais do Outro Lado) _ Iron Master_TeVstBrFoUo.mp3" type="audio/mpeg">
+    </audio>
+    <h2>Reproduzindo vídeo em hospedagem interna</h2>
+    <p>Vamos aprender a reproduzir os videos:</p>
+    <video src="video/python.mp4.mp4" width="300" controls poster="img/py.jpg"></video>
+    <h2>Reproduzindo vídeo em hsopedagem externa [YouTube]</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y" 
+    title="YouTube video player" frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    allowfullscreen></iframe>
+
+</body>
+</html>

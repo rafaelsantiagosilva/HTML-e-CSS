@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: darkslategray;
+            margin: 0px;
+        }
+
+        header {
+            background-color: lightgray;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 15px;
+        }
+       
+        h1 {
+            padding-left: 25px;
+        }
+        h2 {
+            color: aliceblue;
+            padding-left: 10px;
+        }
+
+        nav {
+            background-color: rgb(0, 0, 0);
+            padding: 3px;
+            box-shadow: 5px 4px 3px rgb(39, 40, 41);
+        
+        }
+
+        nav>a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            padding: 3px;
+        }
+
+        nav>a:hover {
+            color: rgba(0, 162, 255, 0.801);
+            text-decoration: underline;
+        }
+
+        main {
+            background-color: rgb(80, 211, 255);
+            padding: 10;
+            margin: 10px;
+            border-radius: 13px;
+        }
+
+        article {
+            background-color: #808080;
+            border-radius: 13px;
+        }
+
+        article>aside {
+            background-color: rgba(165, 170, 173, 0.801);
+            border-radius: 10px;
+            padding-left: 7px;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 5px;
+            margin: 2px;
+            border-radius: 5px;
+        }
+        footer > p {
+            margin: 0px;
+            border-radius: 5px;
+        }
+        footer:hover {
+            background-color: white;
+            color: black;
+        }
+        div#bola {
+            height: 100px;
+            width: 100px;
+            background-color: green;
+            margin: 15px;
+            border-radius: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>HTML6 É LANÇADO!</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam, sequi sint eos quaerat porro fuga
+                    eaque quae itaque. Placeat sequi officia facere excepturi repudiandae magnam commodi nulla nobis
+                    nisi corporis!</p>
+                <aside>Feito por Lorem</aside>
+            </article>
+           
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Rafael Santiago</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+
+</html>
