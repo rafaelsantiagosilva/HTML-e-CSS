@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navegação nos iframes</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe {
+            width: 95%;
+            height: 400px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Navegação nos iframes</h1>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis dolorem quo accusamus inventore error unde,
+        repellat excepturi rem sed quasi omnis molestias eligendi aperiam, velit mollitia blanditiis. Ullam, odio
+        commodi?
+    </p>
+
+    <ul>
+        <li><a target="frame" href="./extras/outrapagina001.html">Primeira página</a></li>
+        <li><a target="frame" href="./extras/outrapagina002.html">Segunda página</a></li>
+        <li><a target="frame" href="./extras/outrapagina003.html">Terceira página</a></li>
+        <li><a target="frame" href="./extras/outrapagina004.html">Tabela</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat ab atque ipsum aperiam soluta assumenda
+        laudantium dolores deleniti, sed consequatur quos expedita vero est incidunt quaerat reprehenderit architecto
+        inventore suscipit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit deserunt nesciunt
+        voluptatibus explicabo tenetur illum aliquam voluptate illo, blanditiis sit, minima autem accusantium. Sed nemo
+        quas iure aliquid provident cumque!
+    </p>
+
+    <!-- Colocando HTML no src dos iframes -->
+    <iframe srcdoc="<h1>Escolha uma das opções acima</h1>" name="frame">
+        <p>Infelizmente seu navegador não é compatível com isto</p>
+    </iframe>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor autem expedita mollitia sunt temporibus nobis
+        labore laborum quisquam voluptate aut provident enim, minus veritatis reiciendis explicabo sed iure, dignissimos
+        dolorem! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur, nulla. Ducimus nesciunt libero sunt
+        voluptate deleniti hic illum et labore cumque provident iure amet facilis harum atque, quos dicta sequi.</p>
+</body>
+
+</html>

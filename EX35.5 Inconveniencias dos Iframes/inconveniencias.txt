@@ -1,0 +1,10 @@
+-> Pode ser que o iframe esteja com problema ruim de indexação pro Google;
+
+-> Os leitores de tela também apresentam estes problemas;
+
+-> Navegador ou usuário pode se confundir;
+
+-> Grandes problemas com responsividade;
+
+-> SEGURANÇA:
+    - Pode abrir portas para outros sites.

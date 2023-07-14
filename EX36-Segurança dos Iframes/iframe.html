@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframe que carrega formulários</title>
+</head>
+
+<body>
+    <h1>Meu site principal</h1>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, non quo inventore voluptatem, mollitia
+        blanditiis aperiam cumque pariatur saepe assumenda animi impedit quia? Placeat saepe, velit fugiat autem sed
+        suscipit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, quasi laboriosam cumque eius illo
+        odio dicta maxime. Nostrum, sunt tempore earum inventore doloribus possimus, blanditiis, maxime quas incidunt
+        perspiciatis sequi.
+    </p>
+
+    <!-- sandbox="sandbox" e referrerpolicy="no-referrer": Não deixa outros sites capturarem dados 
+        -->
+    <iframe src="./extras/formulario.html" width="500px" frameborder="0" sandbox="allow-forms allow-scripts allow-same-origin"
+        referrerpolicy="no-referrer">
+
+        <h2>Cadastre-se aqui!</h2>
+        <form action="cadastro.php" method="get"></form>
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome">
+        <input type="submit" value="Cadastrar">
+
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur praesentium repellendus, facere explicabo,
+        fugit corrupti debitis culpa dignissimos voluptas dolorum optio provident, laudantium quibusdam delectus. Veniam
+        laudantium eaque doloribus incidunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore voluptas
+        consequuntur cupiditate fugiat libero at cum facere magnam officia modi, vitae veniam. Rem amet modi cum eveniet
+        nam pariatur totam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam animi veniam rerum
+        excepturi repudiandae omnis nostrum ratione quasi sunt doloremque officiis magni, non officia assumenda quia
+        itaque corrupti id illum.
+    </p>
+
+    <iframe sandbox="allow-scripts" referrerpolicy="no-refferer" src="./extras/javascript.html" frameborder="0">
+
+    </iframe>
+</body>
+
+</html>
