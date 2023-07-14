@@ -13,6 +13,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative; /* obrigatório */
         }
 
         caption {
@@ -24,8 +25,15 @@
 
         thead,
         tfoot {
-            background-color: gray;
+            background-color: #383838;
             color: white;
+        }
+
+        /* obrigatório */
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: #383838;
         }
 
         td,
@@ -43,17 +51,6 @@
 <body>
     <h1>Uso de tabelas grandes</h1>
 
-    <!-- ANATOMIA PARA TABELAS GRANDES:
-        TABLE
-            CAPTION -> legenda
-            THEAD -> header
-                TR, TD, TH
-            TBODY -> corpo
-                TR, TD, TH
-            TFOOT -> footer
-                TR, TD, [TH] -> TD com negrito
-    -->
-
     <table>
         <caption>População dos estados do sudeste</caption>
         <thead>
@@ -61,7 +58,6 @@
                 <h2>População de cada estado do sudeste</h2>
                 <th scope="col">Estado</th>
                 <th scope="col" style="width: 50px;">População</th>
-                <!-- Este scope é para dizer que pertence a coluna o título -->
             </tr>
         </thead>
 
@@ -84,7 +80,6 @@
 
         <tfoot>
             <th scope="row">Total de habitantes</th>
-            <!-- Já este scope é para dizer que pertence a linha -->
             <td class="num"><strong>84 352 783</strong></td>
         </tfoot>
     </table>
