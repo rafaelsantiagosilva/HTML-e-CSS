@@ -1,0 +1,84 @@
+
+
+body, #submit{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71));
+    color: white;
+}
+
+main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    border-radius: 15px;
+    width: 350px;
+}
+
+fieldset{
+    border: 2px solid rgb(30, 144, 255);
+}
+
+legend{
+    border: 1px, solid rgb(30, 144, 255);
+    border-radius: 5px;
+    background-color: rgb(30, 144, 255);
+    padding: 10px;
+    text-align: center;
+}
+
+input{
+    margin-bottom: 25px;
+}
+
+.inputBox{
+    position: relative;
+}
+
+.inputUser{
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    /* Linha de contorno */
+    outline: none;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+}
+
+#dataNascimento{
+    border: none;
+    border-radius: 10px;
+    padding: 8px;
+    outline: none;
+}
+
+.inputUser:focus ~ .labelInterativa,
+.inputUser:valid ~ .labelInterativa{
+    top: -20px;
+    font-size: 12px;
+    color: rgb(30, 144, 255);
+}
+
+.labelInterativa{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+#submit{
+    background-image: linear-gradient(to right, rgb(0, 92, 197), rgb(98, 20, 220));
+    width: 100%;
+    border: none;
+    border-radius: 15px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+#submit:hover{
+    background-image: linear-gradient(to right, rgb(0, 80, 172), rgb(80, 19, 195));
+}

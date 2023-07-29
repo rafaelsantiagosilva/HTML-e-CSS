@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usando label</title>
+</head>
+<body>
+    <h1>Formulário</h1>
+
+    <!-- 
+        method=""
+            -> GET: aparece na url
+                - Compartilhamento de url
+                - Dados não sensíveis (!= senhas, num cartão...)
+                - Suporta até 3000 bytes somente (praticamente 3000 caracteres)
+                - Sem envios de fotos e arquivos
+            -> POST: não aparece na url
+                - Dados sensíveis (senhas, CPF, CEP...)
+                - Arquivos
+                - Se tiver mais de 3000 bytes
+     -->
+
+    <form action="./cadastro.php" method="POST" autocomplete="off"> 
+
+        <p>
+            <label for="inome">Nome: </label> 
+                <input type="text" name="nome" id="inome">
+        </p>
+        
+        <p>
+            <label for="isobrenome">Sobrenome:</label>
+                <input type="text" name="sobrenome" id="isobrenome">
+        </p>
+        
+        <p><input type="submit" value="Enviar"></p>
+
+    </form>
+</body>
+</html>
