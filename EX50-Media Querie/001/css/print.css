@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+/* Estilo para impressão */
+
+* {
+    margin: 10px;
+    padding: 10px;
+}
+
+html {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    text-align: justify;
+}
+
+h1 {
+    text-align: center;
+}
+
+menu {
+    display: none;
+}
+
+article::after {
+    content: "Esse artigo foi impresso através do site www.exemplo.com no dia 29/07/2023"
+}
+
+h2{
+    text-align: center;
+    margin: 20px 0px;
+}
+
+p{
+    display: block;
+    text-align: justify;
+    padding: 20px;
+    margin: auto;
+    width: 80%;
+}
+
+img{
+    display: block;
+    width: 400px;
+    height: 200px;
+    margin: auto;
+}
+
+footer{
+    text-align: center;
+    padding: 20px;
+}
